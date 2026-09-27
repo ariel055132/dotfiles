@@ -1,0 +1,14 @@
+# macOS 系統檔案
+.DS_Store
+
+# 環境變數與可能含有機密的檔案
+.env
+.env.*
+
+# 常見私鑰檔名
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+*.pem
+*.key
