@@ -1,2 +1,9 @@
+theme = Solarized Osaka Night
+
 font-family = "JetBrains Mono"
 font-size = 16
+
+window-padding-x = 10
+window-padding-y = 10
+
+scrollback-limit = 20000000
