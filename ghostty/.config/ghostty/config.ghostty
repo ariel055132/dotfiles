@@ -2,6 +2,7 @@ theme = Solarized Osaka Night
 
 font-family = "JetBrains Mono"
 font-size = 16
+command = /opt/homebrew/bin/fish
 
 window-padding-x = 10
 window-padding-y = 10
