@@ -8,6 +8,9 @@ end
 # No Greetings
 set fish_greeting ""
 
+# Starship setup
+starship init fish | source
+
 # More useful command with alias
 alias ls "ls -p -G"
 alias la "ls -A"

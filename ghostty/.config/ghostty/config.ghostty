@@ -1,6 +1,6 @@
 theme = Solarized Osaka Night
 
-font-family = "JetBrains Mono"
+font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 16
 command = /opt/homebrew/bin/fish
 
