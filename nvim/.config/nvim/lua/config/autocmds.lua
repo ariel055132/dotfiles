@@ -1,1 +1,2 @@
--- Add custom autocommands here. LazyVim loads this file automatically.
+-- LazyVim loads this file automatically.
+require("config.java").setup()

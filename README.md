@@ -40,12 +40,19 @@ nvim
 | `init.lua`、`lua/config/lazy.lua` | 啟動 LazyVim 與外掛管理器 |
 | `lua/config/options.lua` | 編輯器選項 |
 | `lua/config/keymaps.lua` | 自訂快捷鍵 |
-| `lua/config/autocmds.lua` | 自動事件 |
+| `lua/config/autocmds.lua` | 載入自動事件 |
+| `lua/config/java.lua` | Java 新檔的 package 與 class 骨架 |
 | `lua/plugins/*.lua` | 自訂外掛 |
 | `lazyvim.json` | Extras 與 LazyVim 設定版本資料 |
 | `lazy-lock.json` | 首次安裝後產生，應納入 Git 的外掛版本記錄 |
 
-保留 LazyVim 預設操作與外觀；自訂設定檔目前提供註解範例。
+主題固定為 TokyoNight Moon，其他操作沿用 LazyVim 預設。
+
+Java 新檔會自動建立同名的 `public class`；位於 `src/main/java/` 或 `src/test/java/` 下時，會依子目錄推算 `package`。例如 `src/main/java/Heap/Q2469.java` 會產生 `package Heap;` 與 `public class Q2469`。其他目錄只建立 class，不推測 package。
+
+已存在的空白 `.java` 檔可用 `:JavaNewClass` 補上骨架；已有文字的檔案會保留內容。`package-info.java`、`module-info.java` 不套用 class 範本。此簡易範本支援一般英文字母、數字、底線與 `$` 識別字；特殊來源目錄或 Unicode 名稱請自行建立宣告。產生後仍需手動儲存。
+
+Imports 保留手動控制：選取 Java 類別補全時可加入 import；`Space c a` 選擇修正、`Space c o` 整理 imports。目前未設定存檔時自動整理。
 
 更新外掛使用 `:Lazy update`。在新電腦套用已提交的版本記錄時使用 `:Lazy restore`；它還原外掛版本，不涵蓋 Neovim、Mason 工具或專案依賴。確認正常後再將變更提交：
 

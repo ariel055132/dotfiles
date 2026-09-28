@@ -9,3 +9,6 @@
 
 -- Select Python environments per project with :VenvSelect.
 -- Avoid hardcoding machine-specific Python or Java installation paths here.
+
+-- Use Prettier only in projects that explicitly provide a Prettier config.
+vim.g.lazyvim_prettier_needs_config = true
