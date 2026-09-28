@@ -8,6 +8,17 @@ end
 # Python setting
 fish_add_path ~/.local/bin
 
+# Java setting
+set -gx JAVA_HOME (/usr/libexec/java_home -v 21)
+fish_add_path --path --prepend "$JAVA_HOME/bin"
+
+# Node.js setting
+if command -q fnm
+    fnm env --use-on-cd --shell fish | source
+end
+
+
+
 # Commands to run in interactive sessions can go here
 if status is-interactive
     

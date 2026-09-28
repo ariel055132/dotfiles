@@ -1,0 +1,3 @@
+-- Add custom mappings here. LazyVim's leader key is Space.
+-- Example:
+-- vim.keymap.set("n", "<leader>uw", "<cmd>set wrap!<cr>", { desc = "Toggle Wrap" })
