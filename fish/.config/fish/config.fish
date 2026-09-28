@@ -5,6 +5,9 @@ else if test -x /usr/local/bin/brew
     /usr/local/bin/brew shellenv fish | source
 end
 
+# Python setting
+fish_add_path ~/.local/bin
+
 # Commands to run in interactive sessions can go here
 if status is-interactive
     
